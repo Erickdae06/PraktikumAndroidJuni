@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TampilData"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text1"
+        android:text="Data Mata Kuliah"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="italic|bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/text_kdmatkul"
+        android:text="kode matkul"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:textColor="@color/purple_700"
+        android:textStyle="italic|bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/text_namamatkul"
+        android:text="nama matkul"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inputdata"
+    android:orientation="vertical">
+
+    <!-- masukkan Appbar disini -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:theme="@style/AppTheme.Dark">
+
+        <!-- masukkan toolbar disini -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:popupTheme="@style/AppTheme.Dark"
+            app:title="Input Data Mata Kuliah"
+            android:background="@color/primary"
+            app:titleTextColor="@color/accenttext"
+            app:titleCentered="true"
+            android:elevation="45dp"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/lightprimary2"
+        android:elevation="10dp"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <!-- ROW UNTUK KODE MATA KULIAH -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <!-- letakkan obyek textview dan edittext disini -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Kode Matakuliah"
+                android:textColor="@color/darkprimary"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/txtkodematkul"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <!-- ROW UNTUK NAMA MATA KULIAH -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <!-- letakkan obyek textview dan edittext disini -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Nama Matakuliah"
+                android:textColor="@color/darkprimary"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/txtnamamatkul"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <!-- TAMBAHKAN BUTTON SIMPAN DISINI -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnsimpan"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/accentbutton"
+            android:text="Simpan"
+            android:textColor="@color/white"
+            android:inputType="text"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</LinearLayout>
